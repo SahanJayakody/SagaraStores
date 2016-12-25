@@ -1,0 +1,39 @@
+.abc{  
+    -fx-background-image:url(../image/5439151.jpg);
+
+}
+
+.button {
+    -fx-background-color:   rgb(50,129,46);
+    -fx-text-fill:white;
+    -fx-cursor:hand;
+}
+
+.button:hover {
+    -fx-background-color: rgb(10,10,10);
+    -fx-text-fill:#62CC11;
+
+}
+
+.button:pressed {
+    -fx-font-weight:bold;
+}
+
+ComboBox  * > .list-cell:selected{
+    -fx-background-image: url("images/hover.png");
+}
+
+/*Pagination > * > * > *:selected:hover{
+    -fx-background-image: url("images/hover.png");
+}*/
+
+
+.text-input {
+    -fx-text-fill: -fx-text-inner-color;}
+
+
+
+.mainpane{
+    -fx-background-image: url("images/Bar.png");
+
+}

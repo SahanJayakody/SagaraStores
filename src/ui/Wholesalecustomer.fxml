@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apnMain" onKeyPressed="#apnMainKP" prefHeight="750.0" prefWidth="1200.0" styleClass="abc" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.WholesalecustomerController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="717.0" layoutY="117.0" text="Name" />
+      <Label layoutX="717.0" layoutY="153.0" text="Shop Name" />
+      <Label layoutX="717.0" layoutY="191.0" text="Address" />
+      <Label layoutX="717.0" layoutY="285.0" text="Contact 1" />
+      <Label layoutX="717.0" layoutY="323.0" text="Contact 2" />
+      <TextField fx:id="txtName" layoutX="829.0" layoutY="112.0" onKeyReleased="#txtNameKR" prefHeight="25.0" prefWidth="242.0" promptText="Enter Name" />
+      <TextField fx:id="txtShopName" layoutX="829.0" layoutY="148.0" onKeyReleased="#txtShopNameKR" prefHeight="25.0" prefWidth="242.0" promptText="Enter Shop Name" />
+      <TextArea fx:id="txtAddress" layoutX="829.0" layoutY="191.0" onKeyReleased="#txtAddressKR" prefHeight="75.0" prefWidth="242.0" promptText="Enter Adress" />
+      <TextField fx:id="txtMobile" layoutX="829.0" layoutY="281.0" onKeyReleased="#txtMobileKR" prefHeight="25.0" prefWidth="242.0" promptText="Enter Contact No" />
+      <TextField fx:id="txtLand" layoutX="829.0" layoutY="319.0" onKeyReleased="#txtLandKR" prefHeight="25.0" prefWidth="242.0" promptText="Enter Contact No" />
+      <Button fx:id="btnAdd" layoutX="993.0" layoutY="427.0" mnemonicParsing="false" onAction="#btnAddAP" prefHeight="28.0" prefWidth="78.0" text="Add">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/add.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnClear" layoutX="905.0" layoutY="427.0" mnemonicParsing="false" onAction="#btnClearAP" prefHeight="28.0" prefWidth="78.0" text="Clear">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/clr.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnUpdate" layoutX="812.0" layoutY="427.0" mnemonicParsing="false" onAction="#btnUpdateAP" prefHeight="28.0" prefWidth="78.0" text="Update">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/upt.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnDelete" layoutX="717.0" layoutY="427.0" mnemonicParsing="false" onAction="#btnDeleteAP" prefHeight="28.0" prefWidth="78.0" text="Delete">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/delete.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="174.0" layoutY="115.0" text="Search by Name" />
+      <TextField fx:id="txtSearchName" layoutX="326.0" layoutY="110.0" onKeyReleased="#txtSearchNameKR" prefHeight="25.0" prefWidth="273.0" promptText="Enter Name" />
+      <Button fx:id="btnSearchClear" layoutX="486.0" layoutY="166.0" mnemonicParsing="false" onAction="#btnSearchClearAP" prefHeight="25.0" prefWidth="113.0" text="Clear Search" />
+      <Pagination fx:id="pagination" layoutX="87.0" layoutY="222.0" prefHeight="268.0" prefWidth="512.0" />
+      <TableView fx:id="tblWholesalecustomer" blendMode="MULTIPLY" layoutX="87.0" layoutY="222.0" onKeyReleased="#tblWholesalecustomerKR" onMouseClicked="#tblWholesalecustomerMC" prefHeight="268.0" prefWidth="512.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="128.0" text="Name" />
+          <TableColumn fx:id="colShopName" prefWidth="128.0" text="Shop Name" />
+            <TableColumn fx:id="colContact" prefWidth="128.0" text="Contact 1" />
+            <TableColumn fx:id="colAddress" prefWidth="128.0" text="Address" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

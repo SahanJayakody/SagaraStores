@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="1366.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.PurchaseWindowController">
+   <children>
+      <SplitPane dividerPositions="0.1532258064516129" prefHeight="688.0" prefWidth="1366.0">
+        <items>
+          <AnchorPane maxWidth="206.0" minHeight="0.0" minWidth="206.0" prefHeight="160.0" prefWidth="100.0" styleClass="abc">
+               <children>
+                  <ToggleButton fx:id="tglTeaPurchase" blendMode="MULTIPLY" layoutY="15.0" mnemonicParsing="false" onAction="#tglTeaPurchaseAP" prefHeight="41.0" prefWidth="206.0" stylesheets="@style.css" text="Tea Purchase" textFill="#1ca613">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="purchase" />
+                     </toggleGroup>
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font></ToggleButton>
+                  <ToggleButton fx:id="tglSupplier" blendMode="MULTIPLY" layoutY="56.0" mnemonicParsing="false" onAction="#tglSupplierAP" prefHeight="41.0" prefWidth="206.0" styleClass="toogleButton" text="Supplier" textFill="#1ca613" toggleGroup="$purchase">
+                     <font>
+                        <Font size="18.0" />
+                     </font></ToggleButton>
+                  <ToggleButton fx:id="tglTeaPrice" blendMode="MULTIPLY" layoutY="97.0" mnemonicParsing="false" onAction="#tglTeaPriceAP" prefHeight="41.0" prefWidth="206.0" styleClass="toogleButton" text="Tea Price" textFill="#1ca613" toggleGroup="$purchase">
+                     <font>
+                        <Font size="18.0" />
+                     </font></ToggleButton>
+                  <ToggleButton fx:id="tglSupplierPayble" blendMode="MULTIPLY" layoutY="138.0" mnemonicParsing="false" onAction="#tglSupplierPaybleAP" prefHeight="41.0" prefWidth="206.0" styleClass="toogleButton" text="Supplier Payble" textFill="#1ca613" toggleGroup="$purchase">
+                     <font>
+                        <Font size="18.0" />
+                     </font></ToggleButton>
+                  <ToggleButton fx:id="tglSupplierPayment" blendMode="MULTIPLY" layoutY="179.0" mnemonicParsing="false" onAction="#tglSupplierPaymentAP" prefHeight="41.0" prefWidth="206.0" styleClass="toogleButton" text="Supplier Payment" textFill="#1ca613" toggleGroup="$purchase">
+                     <font>
+                        <Font size="18.0" />
+                     </font></ToggleButton>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="apnRight" minHeight="0.0" minWidth="0.0" prefHeight="686.0" prefWidth="1163.0" styleClass="abc" stylesheets="@style.css" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

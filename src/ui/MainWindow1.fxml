@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" styleClass="abc" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MainWindow1Controller">
+   <children>
+      <Pane prefHeight="107.0" prefWidth="1386.0" styleClass="abcd" stylesheets="@style.css">
+         <children>
+            <ImageView fx:id="imgHome" fitHeight="71.0" fitWidth="75.0" layoutX="43.0" layoutY="18.0" onMouseClicked="#imgHomeMC" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lblLogin" layoutX="1235.0" layoutY="69.0" prefHeight="23.0" prefWidth="75.0" style="-fx-font-size: 15;" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <ImageView fx:id="imgLogin" fitHeight="53.0" fitWidth="53.0" layoutX="1166.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lblMenuName" layoutX="130.0" layoutY="67.0" prefHeight="30.0" prefWidth="146.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <ImageView fx:id="imgLogOut" fitHeight="47.0" fitWidth="53.0" layoutX="1314.0" layoutY="52.0" onMouseClicked="#imgLogOutMC" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logout_1.png" />
+               </image>
+            </ImageView>
+            <ToggleButton fx:id="tglClose" layoutX="1332.0" mnemonicParsing="false" onAction="#tglCloseAP" style="-fx-background-color: 000;" textFill="#141414">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/nav-close-button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="tglMaximize" layoutX="1301.0" mnemonicParsing="false" onAction="#tglMaximizeAP" style="-fx-background-color: 000;" textFill="#141414">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/maximize-button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="tglminimize" layoutX="1269.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglminimizeAP" style="-fx-background-color: 000;" textFill="#141414">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/minimize.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="apnMain" layoutY="107.0" prefHeight="657.0" prefWidth="1388.0" style="-fx-border-width: 0; -fx-border-insets: 0;" styleClass="abc" stylesheets="@style.css">
+         <children>
+            <Group fx:id="mnuPurchase" layoutX="335.0" layoutY="9.0" onMouseClicked="#mnuPurchaseMC" styleClass="grow" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="157.0" fitWidth="186.0" layoutX="422.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" styleClass="grow">
+                     <image>
+                        <Image url="@../image/Purchase.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group fx:id="mnuProduction" layoutX="35.0" layoutY="-293.0" onMouseClicked="#mnuProductionMC" styleClass="grow" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="157.0" fitWidth="186.0" layoutX="400.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" styleClass="grow">
+                     <image>
+                        <Image url="@../image/Prodaction.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group fx:id="mnuSales" layoutX="29.0" layoutY="282.0" onMouseClicked="#mnuSalesMC" styleClass="grow" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="157.0" fitWidth="186.0" layoutX="744.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" styleClass="grow">
+                     <image>
+                        <Image url="@../image/Sales.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group fx:id="mnuReport" layoutX="-313.0" layoutY="-20.0" onMouseClicked="#mnuReportMC" styleClass="grow" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="157.0" fitWidth="186.0" layoutX="764.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" styleClass="grow">
+                     <image>
+                        <Image url="@../image/Report.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group fx:id="mnuTransport" layoutY="9.0" onMouseClicked="#mnuTransportMC" styleClass="grow" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="157.0" fitWidth="186.0" layoutX="1114.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" styleClass="grow">
+                     <image>
+                        <Image url="@../image/Transport1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group fx:id="mnuAdmin" layoutY="-32.0" onMouseClicked="#mnuAdminMC" styleClass="grow" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="157.0" fitWidth="186.0" layoutX="1114.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" styleClass="grow">
+                     <image>
+                        <Image url="@../image/Admin.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <ImageView fitHeight="203.0" fitWidth="270.0" layoutX="35.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/tea.png" />
+               </image>
+            </ImageView>
+            <BorderPane fx:id="root" layoutX="38.0" layoutY="387.0" prefHeight="163.0" prefWidth="270.0" />
+            <Label layoutX="36.0" layoutY="297.0" prefHeight="122.0" prefWidth="298.0" text="While there is tea, there is hope." textFill="#03bc19" wrapText="true">
+               <font>
+                  <Font name="Microsoft Tai Le" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

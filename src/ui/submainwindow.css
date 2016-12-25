@@ -1,0 +1,15 @@
+.toogleButton{
+    -fx-border-width:0;
+    -fx-border-radius:0;
+    -fx-background-radius: 0;
+}
+
+.toogleButton:selected {
+    -fx-background-color: #00b300;
+}
+.toogleButton:pressed {
+    -fx-background-color: #00b300;
+}
+.toogleButton:hover {
+    -fx-background-color: #1aff1a;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="688.0" prefWidth="1366.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.SalesWindowController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+   <children>
+      <SplitPane dividerPositions="0.1532258064516129" prefHeight="688.0" prefWidth="1366.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="abc" stylesheets="@style.css">
+               <children>
+                  <ToggleButton fx:id="tglConsumer" blendMode="MULTIPLY" layoutY="101.0" mnemonicParsing="false" onAction="#tglConsumerAP" prefHeight="41.0" prefWidth="206.0" styleClass="toogleButton" text="Consumer" textFill="#1ca613">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="sales" />
+                     </toggleGroup>
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font></ToggleButton>
+                  <ToggleButton fx:id="tglSalesOrder" blendMode="MULTIPLY" layoutY="17.0" mnemonicParsing="false" onAction="#tglSalesOrderAP" prefHeight="41.0" prefWidth="206.0" styleClass="toogleButton" stylesheets="@submainwindow.css" text="Sales " textFill="#1ca613" toggleGroup="$sales">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font></ToggleButton>
+                  <ToggleButton fx:id="tglPayment" blendMode="MULTIPLY" layoutY="59.0" mnemonicParsing="false" onAction="#tglPaymentAP" prefHeight="41.0" prefWidth="206.0" styleClass="toogleButton" text="Payment" textFill="#1ca613" toggleGroup="$sales">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font></ToggleButton>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="apnRight" minHeight="0.0" minWidth="0.0" prefHeight="686.0" prefWidth="1163.0" styleClass="abc" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

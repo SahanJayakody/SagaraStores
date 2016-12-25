@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1200.0" styleClass="abc" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.PrivilageController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="60.0" layoutY="40.0" text="Role *" textFill="#b57328" />
+      <Label layoutX="60.0" layoutY="89.0" text="Module *" textFill="#b57328" />
+      <ComboBox fx:id="cmbRole" layoutX="167.0" layoutY="35.0" onAction="#cmbRoleAP" prefHeight="25.0" prefWidth="312.0" promptText="Select a Role" />
+      <ComboBox fx:id="cmbModule" layoutX="167.0" layoutY="85.0" onAction="#cmbModuleAP" prefHeight="25.0" prefWidth="312.0" promptText="Select a Module" />
+      <CheckBox fx:id="cbxSelect" layoutX="167.0" layoutY="197.0" mnemonicParsing="false" onAction="#cbxSelectAP" text="Select" />
+      <CheckBox fx:id="cbxInsert" layoutX="167.0" layoutY="233.0" mnemonicParsing="false" onAction="#cbxInsertAP" text="Insert" />
+      <CheckBox fx:id="cbxUpdate" layoutX="167.0" layoutY="266.0" mnemonicParsing="false" onAction="#cbxUpdateAP" text="Update" />
+      <CheckBox fx:id="cbxDelete" layoutX="167.0" layoutY="302.0" mnemonicParsing="false" onAction="#cbxDeleteAP" text="Delete" />
+      <Button fx:id="btnUpdate" layoutX="169.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnUpdateAP" prefHeight="28.0" prefWidth="93.0" text="Update">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/upt.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnDelete" layoutX="60.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnDeleteAP" prefHeight="28.0" prefWidth="93.0" text="Delete">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/delete.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnClear" layoutX="278.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnClearAP" prefHeight="28.0" prefWidth="93.0" text="Clear">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/clr.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnAdd" layoutX="386.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnAddAP" prefHeight="28.0" prefWidth="93.0" text="Add">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/add.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="569.0" layoutY="39.0" text="Role" />
+      <Label layoutX="569.0" layoutY="83.0" text="Module" />
+      <ComboBox fx:id="cmbSearchRole" layoutX="685.0" layoutY="35.0" onAction="#cmbSearchRoleAP" prefHeight="25.0" prefWidth="312.0" promptText="Select a Role" />
+      <ComboBox fx:id="cmbSearchModule" layoutX="685.0" layoutY="79.0" onAction="#cmbSearchModuleAP" prefHeight="25.0" prefWidth="312.0" promptText="Select a Module" />
+      <Button fx:id="btnSearchClear" layoutX="914.0" layoutY="149.0" mnemonicParsing="false" onAction="#btnSearchClearAP" text="Search Clear" />
+      <Pagination fx:id="pagination" layoutX="557.0" layoutY="197.0" prefHeight="364.0" prefWidth="440.0" />
+      <TableView fx:id="tblPrivilage" blendMode="MULTIPLY" layoutX="557.0" layoutY="197.0" onKeyReleased="#tblPrivilageKR" onMouseClicked="#tblPrivilageMC" prefHeight="316.0" prefWidth="440.0">
+        <columns>
+            <TableColumn fx:id="colRole" prefWidth="100.0" text="Role" />
+            <TableColumn fx:id="colModule" prefWidth="100.0" text="Module" />
+            <TableColumn fx:id="colSelect" prefWidth="60.0" text="Select" />
+          <TableColumn fx:id="colInsert" prefWidth="60.0" text="Insert" />
+          <TableColumn fx:id="colUpdate" prefWidth="60.0" text="Update" />
+            <TableColumn fx:id="colDelete" prefWidth="60.0" text="Delete" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="main" onKeyPressed="#mainKP" prefHeight="400.0" prefWidth="400.0" styleClass="abc" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.LoginController">
+   <children>
+      <ImageView fitHeight="80.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/New%20folder%20(2)/new%20bar2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="322.0" fitWidth="400.0" layoutY="79.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/New%20folder%20(2)/14881485_1456273994386864_460002164_o.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="38.0" layoutY="223.0" prefHeight="43.0" prefWidth="43.0" style="-fx-border-color: green; -fx-background-color: white;" />
+      <Label layoutX="38.0" layoutY="153.0" prefHeight="43.0" prefWidth="43.0" style="-fx-border-color: green; -fx-background-color: white;" />
+      <TextField fx:id="txtUsername" layoutX="80.0" layoutY="153.0" prefHeight="43.0" prefWidth="284.0" promptText="Enter User Name" style="-fx-border-color: green;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="pswPassword" layoutX="81.0" layoutY="223.0" prefHeight="43.0" prefWidth="284.0" promptText="Enter Password" style="-fx-border-color: green;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="46.0" layoutY="232.0">
+         <image>
+            <Image url="@../image/New%20folder%20(2)/Password-shopping-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="46.0" layoutY="162.0">
+         <image>
+            <Image url="@../image/New%20folder%20(2)/0.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="38.0" layoutY="106.0" text="User Login" textFill="#6f6d6d">
+         <font>
+            <Font name="Microsoft Tai Le" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLogin" layoutX="38.0" layoutY="302.0" mnemonicParsing="false" onAction="#btnLoginAP" prefHeight="13.0" prefWidth="325.0" style="-fx-background-color: #02b116; -fx-border-color: #02b116;" text="Log In" textFill="WHITE">
+         <font>
+            <Font name="Microsoft Tai Le Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblAttempt" layoutX="172.0" layoutY="363.0" />
+      <ToggleButton fx:id="tglClose" layoutX="368.0" layoutY="4.0" mnemonicParsing="false" onAction="#tglCloseAP" style="-fx-background-color: 000;">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/New%20folder%20(2)/nav-close-button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </ToggleButton>
+      <ToggleButton fx:id="tglMaximize" layoutX="337.0" layoutY="4.0" mnemonicParsing="false" style="-fx-background-color: 000;">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/New%20folder%20(2)/maximize-button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </ToggleButton>
+      <ToggleButton fx:id="tglMinimized" layoutX="306.0" layoutY="4.0" mnemonicParsing="false" onAction="#tglMinimizedAP" style="-fx-background-color: 000;">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/New%20folder%20(2)/minimize.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </ToggleButton>
+   </children>
+</AnchorPane>
